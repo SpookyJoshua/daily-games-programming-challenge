@@ -19,26 +19,5 @@
     "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-16",
     "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-16/",
     "generatedAt": "2026-07-15T23:05:47.856Z"
-  },
-  {
-    "date": "2026-07-15",
-    "id": "2026-07-15-damage-pipeline",
-    "signature": "989964f09e3300b7",
-    "title": "Damage Resolution Pipeline",
-    "difficulty": "Advanced",
-    "estimatedMinutes": 65,
-    "description": "Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application.",
-    "requirements": [
-      "Incoming damage must be represented by an immutable request object.",
-      "Each processing stage must be independently testable.",
-      "Damage values must never become negative.",
-      "Rejected damage must include a reason.",
-      "The final result must report health damage, shield damage, and whether the hit was critical."
-    ],
-    "constraint": "Important state changes must be reported through events or callbacks.",
-    "stretchGoal": "Add save and load support without coupling serialisation to the core system.",
-    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-15",
-    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-15/",
-    "generatedAt": "2026-07-15T22:57:19.616Z"
   }
 ]
