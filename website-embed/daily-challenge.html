@@ -1,0 +1,62 @@
+<section
+    class="global-daily-challenge"
+    id="global-daily-challenge"
+    data-current-api="https://raw.githubusercontent.com/SpookyJoshua/daily-games-programming-challenge/main/docs/api/current.json"
+    data-archive-api="https://raw.githubusercontent.com/SpookyJoshua/daily-games-programming-challenge/main/docs/api/challenges.json"
+>
+    <div class="global-challenge-heading">
+        <div>
+            <p class="global-challenge-eyebrow">
+                Daily practice
+            </p>
+
+            <h2>Games Programming Challenge</h2>
+
+            <p>
+                One globally shared interview-style challenge is
+                published every day and archived on GitHub.
+            </p>
+        </div>
+
+        <a
+            class="global-challenge-repository-link"
+            href="https://github.com/SpookyJoshua/daily-games-programming-challenge"
+        >
+            View repository
+        </a>
+    </div>
+
+    <article
+        class="global-challenge-current"
+        id="global-challenge-current"
+        aria-live="polite"
+    >
+        <p>Loading today's challenge...</p>
+    </article>
+
+    <div class="global-challenge-archive-heading">
+        <div>
+            <p class="global-challenge-eyebrow">
+                Previous challenges
+            </p>
+
+            <h3>Challenge Archive</h3>
+        </div>
+
+        <label class="global-challenge-search">
+            <span>Search archive</span>
+
+            <input
+                id="global-challenge-search"
+                type="search"
+                placeholder="AI, inventory, pathfinding..."
+            >
+        </label>
+    </div>
+
+    <div
+        class="global-challenge-archive"
+        id="global-challenge-archive"
+        aria-live="polite"
+    ></div>
+</section>

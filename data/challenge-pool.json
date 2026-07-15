@@ -1,0 +1,449 @@
+{
+  "challenges": [
+    {
+      "id": "stackable-inventory",
+      "title": "Stackable Equipment Inventory",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 50,
+      "description": "Build an inventory that stores stackable consumables and unique equipment while keeping configuration data separate from runtime item state.",
+      "requirements": [
+        "Item definitions must use stable unique identifiers.",
+        "Stackable items must fill partial stacks before creating new stacks.",
+        "Unique equipment must retain its own runtime durability value.",
+        "Removing an unavailable quantity must leave the inventory unchanged.",
+        "External callers must not be able to mutate the internal collection directly."
+      ]
+    },
+    {
+      "id": "enemy-state-machine",
+      "title": "Interruptible Enemy State Machine",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 55,
+      "description": "Create an enemy state machine with idle, patrol, investigate, chase, attack, and stunned states.",
+      "requirements": [
+        "Every state must expose enter, update, and exit behaviour.",
+        "Stunned must be able to interrupt any active state.",
+        "Attack must respect both range and cooldown checks.",
+        "The state machine must reject invalid transitions safely.",
+        "Adding a new state must not require editing every existing state."
+      ]
+    },
+    {
+      "id": "object-pool",
+      "title": "Capacity-Limited Object Pool",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 45,
+      "description": "Implement a reusable pool for projectiles, particles, or enemies with configurable growth and capacity rules.",
+      "requirements": [
+        "Inactive objects must be reused before new objects are created.",
+        "The pool must optionally enforce a hard maximum capacity.",
+        "Returning an object twice must not corrupt the pool.",
+        "Creation, activation, and deactivation logic must be separate.",
+        "The pool must expose read-only diagnostics for active and inactive counts."
+      ]
+    },
+    {
+      "id": "damage-pipeline",
+      "title": "Damage Resolution Pipeline",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 65,
+      "description": "Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application.",
+      "requirements": [
+        "Incoming damage must be represented by an immutable request object.",
+        "Each processing stage must be independently testable.",
+        "Damage values must never become negative.",
+        "Rejected damage must include a reason.",
+        "The final result must report health damage, shield damage, and whether the hit was critical."
+      ]
+    },
+    {
+      "id": "wave-spawner",
+      "title": "Data-Driven Encounter Wave Controller",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 55,
+      "description": "Build a wave controller that processes configurable enemy groups, spawn delays, completion rules, and optional intermissions.",
+      "requirements": [
+        "Wave configuration must be separate from runtime progress.",
+        "Each group must define an enemy type, quantity, and spawn interval.",
+        "The next wave must not begin until the active completion rule succeeds.",
+        "The controller must report wave-started, wave-completed, and encounter-completed events.",
+        "Cancellation must stop pending spawns safely."
+      ]
+    },
+    {
+      "id": "quest-tracker",
+      "title": "Event-Driven Quest Objective Tracker",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 55,
+      "description": "Implement quests containing collection, elimination, interaction, and location objectives without tightly coupling quests to gameplay systems.",
+      "requirements": [
+        "Objectives must subscribe only to relevant gameplay events.",
+        "Completed objectives must ignore further progress.",
+        "Optional objectives must not block quest completion.",
+        "Quest progress must be serialisable without serialising event subscriptions.",
+        "The system must report progress changes without UI polling."
+      ]
+    },
+    {
+      "id": "ability-cooldowns",
+      "title": "Charge-Based Ability Cooldowns",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 45,
+      "description": "Create an ability cooldown system that supports independent abilities, multiple charges, recharge queues, and cooldown modifiers.",
+      "requirements": [
+        "Abilities must use stable identifiers rather than display names.",
+        "Using a charge must begin recharging only the missing charge.",
+        "Cooldown progress must be available as a normalised value.",
+        "Changing a cooldown modifier must preserve valid progress.",
+        "The system must define what happens when an active cooldown is restarted."
+      ]
+    },
+    {
+      "id": "versioned-save",
+      "title": "Transactional Versioned Save System",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 75,
+      "description": "Build a save system that validates data, migrates older versions, and applies loaded state only after the entire operation succeeds.",
+      "requirements": [
+        "Every save must include a version number.",
+        "Older versions must be migrated sequentially.",
+        "A failed migration must leave runtime state unchanged.",
+        "Serialisation and game-state application must remain separate.",
+        "The result must distinguish missing, corrupt, incompatible, and successful saves."
+      ]
+    },
+    {
+      "id": "typed-event-bus",
+      "title": "Type-Safe Gameplay Event Bus",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 60,
+      "description": "Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references.",
+      "requirements": [
+        "Events must use strongly typed payloads.",
+        "Subscribers must be able to register and unregister safely.",
+        "Duplicate subscription behaviour must be explicitly defined.",
+        "Publishing with no listeners must be safe.",
+        "One failing listener must not prevent remaining listeners from being called."
+      ]
+    },
+    {
+      "id": "weighted-loot",
+      "title": "Deterministic Weighted Loot Table",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 45,
+      "description": "Create a weighted loot table supporting rarity weights, quantity ranges, guaranteed drops, and deterministic seeded rolls.",
+      "requirements": [
+        "Zero-weight entries must never be selected randomly.",
+        "Invalid or empty tables must return a descriptive failure.",
+        "Guaranteed drops must be resolved separately from weighted drops.",
+        "The same seed and input data must produce the same result.",
+        "Random number generation must be supplied as a dependency."
+      ]
+    },
+    {
+      "id": "combat-input-buffer",
+      "title": "Priority Combat Input Buffer",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 65,
+      "description": "Create an input buffer that stores combat commands until the character can execute them, while supporting expiry and priority.",
+      "requirements": [
+        "Buffered commands must expire after a configurable duration.",
+        "Commands with equal priority must preserve input order.",
+        "Invalid commands must be discarded with a reason.",
+        "The buffer must have a configurable maximum size.",
+        "Executing or discarding a command must remove it exactly once."
+      ]
+    },
+    {
+      "id": "status-effects",
+      "title": "Composable Status Effect System",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 75,
+      "description": "Build a status effect system supporting timed effects, periodic ticks, stacking rules, stat modifiers, and safe removal.",
+      "requirements": [
+        "Effect definitions must not contain shared runtime state.",
+        "Each effect must define stack, refresh, replace, or reject behaviour.",
+        "Periodic effects must support configurable intervals.",
+        "Removing an effect must reverse temporary modifications.",
+        "Finite and infinite durations must both be supported."
+      ]
+    },
+    {
+      "id": "branching-dialogue",
+      "title": "Conditional Branching Dialogue Runtime",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 60,
+      "description": "Implement dialogue nodes, conditional responses, state-changing consequences, and conversation termination without UI dependencies.",
+      "requirements": [
+        "A node must support multiple player responses.",
+        "Unavailable responses must include a reason for debugging.",
+        "Consequences must be applied only after a response is selected.",
+        "Dialogue data must remain separate from presentation.",
+        "Invalid node references must terminate gracefully with an error result."
+      ]
+    },
+    {
+      "id": "combo-score",
+      "title": "Decay-Based Combo Scoring",
+      "difficulty": "Junior",
+      "estimatedMinutes": 35,
+      "description": "Create a scoring system where successful actions build a multiplier that decays after inactivity and resets on failure.",
+      "requirements": [
+        "Multiplier growth thresholds must be configurable.",
+        "The multiplier must have a maximum value.",
+        "A failed action must reset the combo.",
+        "Awarded score must use the multiplier active at that moment.",
+        "The system must expose remaining combo time without requiring UI-specific code."
+      ]
+    },
+    {
+      "id": "procedural-rooms",
+      "title": "Seeded Procedural Room Chain",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 70,
+      "description": "Generate a sequence of compatible rooms using doorway directions, room tags, repetition limits, and a supplied seed.",
+      "requirements": [
+        "Only rooms compatible with the previous exit may be selected.",
+        "Required and forbidden room tags must be respected.",
+        "Each room must have a configurable repetition limit.",
+        "The generator must report when no valid continuation exists.",
+        "The same seed and input catalogue must produce the same layout."
+      ]
+    },
+    {
+      "id": "threat-system",
+      "title": "Decaying AI Threat Selection",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 65,
+      "description": "Implement an AI threat system using damage, distance, healing, visibility, and time-based decay to choose a target.",
+      "requirements": [
+        "Threat sources must use configurable weightings.",
+        "Destroyed or invalid targets must be removed safely.",
+        "Threat must decay over time.",
+        "Target changes must use hysteresis to avoid rapid switching.",
+        "The system must explain why the current target was selected."
+      ]
+    },
+    {
+      "id": "grid-pathfinding",
+      "title": "Weighted Grid Pathfinding",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 80,
+      "description": "Implement pathfinding across a grid containing blocked cells and different movement costs.",
+      "requirements": [
+        "The result must contain an ordered path from start to destination.",
+        "Blocked cells must never appear in the final path.",
+        "Movement cost and estimated remaining cost must be tracked separately.",
+        "The system must report when no path exists.",
+        "The algorithm must avoid repeatedly recalculating closed nodes without cause."
+      ]
+    },
+    {
+      "id": "checkpoint-respawn",
+      "title": "Checkpoint and Respawn Snapshot",
+      "difficulty": "Junior",
+      "estimatedMinutes": 40,
+      "description": "Build a checkpoint service that records the latest valid checkpoint and restores selected player state after death.",
+      "requirements": [
+        "Activating the same checkpoint repeatedly must be safe.",
+        "A default spawn must exist when no checkpoint has been activated.",
+        "Checkpoint data must not directly manipulate the player object.",
+        "Respawn must restore position and configurable state values.",
+        "Invalid checkpoint data must fall back safely."
+      ]
+    },
+    {
+      "id": "audio-priority",
+      "title": "Voice-Limited Audio Priority Manager",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 50,
+      "description": "Create an audio request manager that limits simultaneous sounds and replaces lower-priority sounds when appropriate.",
+      "requirements": [
+        "Every request must include priority and category.",
+        "Global and per-category voice limits must be configurable.",
+        "Completed sounds must be removed from active tracking.",
+        "Equal-priority replacement behaviour must be deterministic.",
+        "A rejected request must report why it could not play."
+      ]
+    },
+    {
+      "id": "turn-order",
+      "title": "Initiative Timeline Turn Manager",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 55,
+      "description": "Create a deterministic turn timeline where speed affects action frequency and characters can delay or be inserted mid-combat.",
+      "requirements": [
+        "Faster characters must generally act more frequently.",
+        "Delaying a turn must preserve other characters' progress.",
+        "Defeated characters must be removed safely.",
+        "Adding a character must not reset the existing timeline.",
+        "Tie-breaking behaviour must be deterministic."
+      ]
+    },
+    {
+      "id": "crafting",
+      "title": "Atomic Recipe Crafting",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 50,
+      "description": "Implement crafting that validates all ingredients and capacity rules before modifying the inventory.",
+      "requirements": [
+        "Recipes must support several ingredient types and quantities.",
+        "A failed validation must not modify inventory state.",
+        "Ingredients must be removed only after every check succeeds.",
+        "The result must identify each missing requirement.",
+        "Recipe definitions must remain separate from runtime crafting logic."
+      ]
+    },
+    {
+      "id": "achievements",
+      "title": "Persistent Achievement Progress",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 50,
+      "description": "Create an event-driven achievement tracker with incremental progress, permanent unlocks, and save support.",
+      "requirements": [
+        "Achievements must use stable unique identifiers.",
+        "Progress must never exceed the required amount.",
+        "Unlocking the same achievement twice must be prevented.",
+        "Loaded progress must be validated against current definitions.",
+        "Gameplay systems must not reference individual achievements directly."
+      ]
+    },
+    {
+      "id": "command-history",
+      "title": "Command History with Undo and Redo",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 60,
+      "description": "Implement commands with execute, undo, redo, grouping, and an optional history capacity.",
+      "requirements": [
+        "Every command must expose execute and undo operations.",
+        "Executing after an undo must clear redo history.",
+        "Undo and redo with empty histories must be safe.",
+        "A grouped command must behave as one history entry.",
+        "History capacity must discard the oldest complete entry."
+      ]
+    },
+    {
+      "id": "stat-modifiers",
+      "title": "Ordered Stat Modifier Pipeline",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 55,
+      "description": "Create stats with base values, flat additions, additive percentages, multiplicative modifiers, temporary effects, and clamps.",
+      "requirements": [
+        "Base values must remain unchanged by modifiers.",
+        "Modifiers must be removable using stable identifiers.",
+        "Calculation order must be explicit and testable.",
+        "Temporary modifiers must expire automatically.",
+        "External callers must receive a read-only view of active modifiers."
+      ]
+    },
+    {
+      "id": "interaction-selection",
+      "title": "Contextual Interaction Selector",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 50,
+      "description": "Create a selector that chooses the best interactable using distance, viewing angle, priority, and line of sight.",
+      "requirements": [
+        "Invalid interactables must be ignored safely.",
+        "Selection scoring must be configurable.",
+        "The selected target must not flicker between near-equal candidates.",
+        "The system must report selection changes through an event.",
+        "Interaction execution must remain separate from target selection."
+      ]
+    },
+    {
+      "id": "replay-buffer",
+      "title": "Fixed-Step Gameplay Replay Buffer",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 75,
+      "description": "Record compact fixed-step player inputs and replay them deterministically for debugging or ghost playback.",
+      "requirements": [
+        "Recorded frames must include a fixed-step index.",
+        "The buffer must have a configurable maximum duration.",
+        "Playback must support pause, resume, seek, and restart.",
+        "Recording data must be serialisable.",
+        "The replay system must detect mismatched simulation versions."
+      ]
+    },
+    {
+      "id": "spawn-director",
+      "title": "Dynamic Enemy Spawn Director",
+      "difficulty": "Advanced",
+      "estimatedMinutes": 70,
+      "description": "Build a director that spends a threat budget on enemy compositions while respecting pacing, spawn validity, and active enemy limits.",
+      "requirements": [
+        "Enemy types must have configurable budget costs.",
+        "The director must never exceed its active-enemy limit.",
+        "Spawn points must be validated before use.",
+        "Threat budget growth and recovery must be configurable.",
+        "The director must explain why a spawn request was rejected."
+      ]
+    },
+    {
+      "id": "resource-regeneration",
+      "title": "Regenerating Resource with Delays",
+      "difficulty": "Junior",
+      "estimatedMinutes": 35,
+      "description": "Implement health, stamina, or mana regeneration with spend validation, delayed recovery, modifiers, and maximum-value changes.",
+      "requirements": [
+        "Spending more than the available value must fail without modification.",
+        "Regeneration must begin only after a configurable delay.",
+        "Changing the maximum must define whether the current ratio is preserved.",
+        "Regeneration modifiers must stack using a documented rule.",
+        "Value changes must be observable without polling."
+      ]
+    },
+    {
+      "id": "scene-transition",
+      "title": "Queued Asynchronous Scene Transition",
+      "difficulty": "Intermediate",
+      "estimatedMinutes": 55,
+      "description": "Create a scene transition coordinator with loading progress, fade stages, cancellation rules, and duplicate-request handling.",
+      "requirements": [
+        "Only one transition may actively load at a time.",
+        "Duplicate requests must have defined behaviour.",
+        "Loading progress must be exposed independently from UI.",
+        "A failed load must restore a valid state.",
+        "Scene activation must occur only after required transition stages complete."
+      ]
+    }
+  ],
+  "constraints": [
+    "Keep the core logic independent from MonoBehaviour so it can be unit tested without a Unity scene.",
+    "Do not use a singleton or any mutable global state.",
+    "Avoid inheritance for the main design; prefer composition and small interfaces.",
+    "Do not identify gameplay objects, states, or actions using display-name strings.",
+    "Do not expose mutable collections publicly.",
+    "Do not use LINQ inside frequently executed gameplay code.",
+    "The primary manager class must remain below 150 lines.",
+    "Do not allocate a new collection during every update tick.",
+    "Dependencies must be supplied through a constructor or explicit initialisation method.",
+    "Use a dedicated result type rather than returning only true or false.",
+    "Configuration data and runtime state must use separate types.",
+    "Invalid input must be handled without throwing from the public gameplay API.",
+    "Important state changes must be reported through events or callbacks.",
+    "Design the public API first and include a short usage example.",
+    "The solution must remain safe when a tracked object is removed unexpectedly.",
+    "Time must be supplied through an abstraction rather than read directly from UnityEngine.Time.",
+    "Random number generation must be supplied through an abstraction.",
+    "The main system must support more than one simultaneous independent instance.",
+    "Avoid checking every registered entry on every frame.",
+    "All externally visible state must be read-only."
+  ],
+  "stretchGoals": [
+    "Write at least three unit tests covering normal behaviour, an edge case, and invalid input.",
+    "Add save and load support without coupling serialisation to the core system.",
+    "Create a small performance test using at least 1,000 simulated entries.",
+    "Add a diagnostic snapshot that explains the system's current state.",
+    "Provide a second implementation behind the same interface.",
+    "Add cancellation or interruption behaviour.",
+    "Support deterministic replay from a recorded seed or command sequence.",
+    "Create a Unity adapter that wraps the plain C# implementation.",
+    "Add editor-time validation for invalid configuration values.",
+    "Document one architectural trade-off and one rejected alternative.",
+    "Add a debug event history with a configurable maximum capacity.",
+    "Support runtime configuration changes without rebuilding the entire system.",
+    "Add graceful recovery when one dependency reports a failure.",
+    "Create an example showing two separate systems consuming the same public API.",
+    "Add profiling counters for the operations most likely to become expensive."
+  ]
+}

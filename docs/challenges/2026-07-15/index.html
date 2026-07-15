@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application."
+    >
+    <title>
+        Damage Resolution Pipeline |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-07-15</p>
+            <h1>Damage Resolution Pipeline</h1>
+
+            <div class="meta-row">
+                <span>Advanced</span>
+                <span>65 minutes</span>
+            </div>
+
+            <p class="lead">
+                Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Incoming damage must be represented by an immutable request object.</li><li>Each processing stage must be independently testable.</li><li>Damage values must never become negative.</li><li>Rejected damage must include a reason.</li><li>The final result must report health damage, shield damage, and whether the hit was critical.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Important state changes must be reported through events or callbacks.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Add save and load support without coupling serialisation to the core system.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-15"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
