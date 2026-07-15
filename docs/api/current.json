@@ -1,21 +1,23 @@
-{
-  "date": "2026-07-16",
-  "id": "2026-07-16-checkpoint-respawn",
-  "signature": "371d7cef81311f7b",
-  "title": "Checkpoint and Respawn Snapshot",
-  "difficulty": "Junior",
-  "estimatedMinutes": 40,
-  "description": "Build a checkpoint service that records the latest valid checkpoint and restores selected player state after death.",
-  "requirements": [
-    "Activating the same checkpoint repeatedly must be safe.",
-    "A default spawn must exist when no checkpoint has been activated.",
-    "Checkpoint data must not directly manipulate the player object.",
-    "Respawn must restore position and configurable state values.",
-    "Invalid checkpoint data must fall back safely."
-  ],
-  "constraint": "Use a dedicated result type rather than returning only true or false.",
-  "stretchGoal": "Add graceful recovery when one dependency reports a failure.",
-  "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-16",
-  "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-16/",
-  "generatedAt": "2026-07-15T23:05:47.856Z"
-}
+[
+  {
+    "date": "2026-07-15",
+    "id": "2026-07-15-damage-pipeline",
+    "signature": "989964f09e3300b7",
+    "title": "Damage Resolution Pipeline",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 65,
+    "description": "Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application.",
+    "requirements": [
+      "Incoming damage must be represented by an immutable request object.",
+      "Each processing stage must be independently testable.",
+      "Damage values must never become negative.",
+      "Rejected damage must include a reason.",
+      "The final result must report health damage, shield damage, and whether the hit was critical."
+    ],
+    "constraint": "Important state changes must be reported through events or callbacks.",
+    "stretchGoal": "Add save and load support without coupling serialisation to the core system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-15",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-15/",
+    "generatedAt": "2026-07-15T22:57:19.616Z"
+  }
+]
