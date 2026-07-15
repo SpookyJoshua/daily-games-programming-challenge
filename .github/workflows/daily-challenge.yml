@@ -8,7 +8,7 @@ on:
         required: false
         type: string
   schedule:
-    - cron: "30 0 * * *"
+    - cron: "*/5 * * * *"
       timezone: "Europe/London"
 
 permissions:
