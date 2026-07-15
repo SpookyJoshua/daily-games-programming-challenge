@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-16",
+    "id": "2026-07-16-checkpoint-respawn",
+    "signature": "371d7cef81311f7b",
+    "title": "Checkpoint and Respawn Snapshot",
+    "difficulty": "Junior",
+    "estimatedMinutes": 40,
+    "description": "Build a checkpoint service that records the latest valid checkpoint and restores selected player state after death.",
+    "requirements": [
+      "Activating the same checkpoint repeatedly must be safe.",
+      "A default spawn must exist when no checkpoint has been activated.",
+      "Checkpoint data must not directly manipulate the player object.",
+      "Respawn must restore position and configurable state values.",
+      "Invalid checkpoint data must fall back safely."
+    ],
+    "constraint": "Use a dedicated result type rather than returning only true or false.",
+    "stretchGoal": "Add graceful recovery when one dependency reports a failure.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-16",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-16/",
+    "generatedAt": "2026-07-15T23:05:47.856Z"
+  },
+  {
     "date": "2026-07-15",
     "id": "2026-07-15-damage-pipeline",
     "signature": "989964f09e3300b7",
