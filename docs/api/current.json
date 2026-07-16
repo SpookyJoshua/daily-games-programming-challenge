@@ -1,21 +1,21 @@
-{
-  "date": "2026-07-14",
-  "id": "2026-07-14-scene-transition",
-  "signature": "4b102c4f71be08a4",
-  "title": "Queued Asynchronous Scene Transition",
-  "difficulty": "Intermediate",
-  "estimatedMinutes": 55,
-  "description": "Create a scene transition coordinator with loading progress, fade stages, cancellation rules, and duplicate-request handling.",
-  "requirements": [
-    "Only one transition may actively load at a time.",
-    "Duplicate requests must have defined behaviour.",
-    "Loading progress must be exposed independently from UI.",
-    "A failed load must restore a valid state.",
-    "Scene activation must occur only after required transition stages complete."
-  ],
-  "constraint": "Random number generation must be supplied through an abstraction.",
-  "stretchGoal": "Support deterministic replay from a recorded seed or command sequence.",
-  "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-14",
-  "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-14/",
-  "generatedAt": "2026-07-16T00:31:55.947Z"
-}
+  {
+    "date": "2026-07-15",
+    "id": "2026-07-15-damage-pipeline",
+    "signature": "989964f09e3300b7",
+    "title": "Damage Resolution Pipeline",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 65,
+    "description": "Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application.",
+    "requirements": [
+      "Incoming damage must be represented by an immutable request object.",
+      "Each processing stage must be independently testable.",
+      "Damage values must never become negative.",
+      "Rejected damage must include a reason.",
+      "The final result must report health damage, shield damage, and whether the hit was critical."
+    ],
+    "constraint": "Important state changes must be reported through events or callbacks.",
+    "stretchGoal": "Add save and load support without coupling serialisation to the core system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-15",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-15/",
+    "generatedAt": "2026-07-15T22:57:19.616Z"
+  }
