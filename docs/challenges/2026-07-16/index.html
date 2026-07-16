@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Implement commands with execute, undo, redo, grouping, and an optional history capacity."
+    >
+    <title>
+        Command History with Undo and Redo |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-07-16</p>
+            <h1>Command History with Undo and Redo</h1>
+
+            <div class="meta-row">
+                <span>Advanced</span>
+                <span>60 minutes</span>
+            </div>
+
+            <p class="lead">
+                Implement commands with execute, undo, redo, grouping, and an optional history capacity.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Every command must expose execute and undo operations.</li><li>Executing after an undo must clear redo history.</li><li>Undo and redo with empty histories must be safe.</li><li>A grouped command must behave as one history entry.</li><li>History capacity must discard the oldest complete entry.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Keep the core logic independent from MonoBehaviour so it can be unit tested without a Unity scene.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Add a debug event history with a configurable maximum capacity.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-16"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
