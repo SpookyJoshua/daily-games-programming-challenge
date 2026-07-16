@@ -7,15 +7,16 @@ on:
         description: "Optional challenge date in YYYY-MM-DD format"
         required: false
         type: string
+
   schedule:
-  - cron: "17,47 23 * * *"
-    timezone: "Europe/London"
+    - cron: "17,47 23 * * *"
+      timezone: "Europe/London"
 
-  - cron: "17,47 0 * * *"
-    timezone: "Europe/London"
+    - cron: "17,47 0 * * *"
+      timezone: "Europe/London"
 
-  - cron: "17,47 1 * * *"
-    timezone: "Europe/London"
+    - cron: "17,47 1 * * *"
+      timezone: "Europe/London"
 
 permissions:
   contents: write
@@ -40,14 +41,63 @@ jobs:
           node-version: 24
           package-manager-cache: false
 
+      - name: Determine challenge date
+        shell: bash
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE_EXPRESSION: ${{ github.event.schedule }}
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$INPUT_DATE" ]; then
+            TARGET_DATE="$INPUT_DATE"
+          else
+            TARGET_DATE=$(node <<'NODE'
+          const timeZone = "Europe/London";
+
+          const parts = Object.fromEntries(
+            new Intl.DateTimeFormat("en-GB", {
+              timeZone,
+              year: "numeric",
+              month: "2-digit",
+              day: "2-digit",
+              hour: "2-digit",
+              hourCycle: "h23"
+            })
+              .formatToParts(new Date())
+              .filter(part => part.type !== "literal")
+              .map(part => [part.type, part.value])
+          );
+
+          const targetDate = new Date(
+            `${parts.year}-${parts.month}-${parts.day}T12:00:00Z`
+          );
+
+          const isElevenPmSchedule =
+            process.env.SCHEDULE_EXPRESSION === "17,47 23 * * *";
+
+          /*
+           * A normal 11pm run generates tomorrow's challenge.
+           *
+           * If GitHub delays the 11pm event until after midnight,
+           * London's current date is already the correct target date,
+           * so another day is not added.
+           */
+          if (isElevenPmSchedule && Number(parts.hour) === 23) {
+            targetDate.setUTCDate(targetDate.getUTCDate() + 1);
+          }
+
+          console.log(targetDate.toISOString().slice(0, 10));
+          NODE
+            )
+          fi
+
+          echo "Challenge target date: $TARGET_DATE"
+          echo "TARGET_DATE=$TARGET_DATE" >> "$GITHUB_ENV"
+
       - name: Generate challenge
         shell: bash
         run: |
-          if [ -n "${{ inputs.date }}" ]; then
-            node scripts/generate-challenge.mjs --date="${{ inputs.date }}"
-          else
-            node scripts/generate-challenge.mjs
-          fi
+          node scripts/generate-challenge.mjs --date="$TARGET_DATE"
 
       - name: Commit generated challenge
         shell: bash
@@ -61,7 +111,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add challenges docs/api docs/challenges
-          git commit -m "Add daily challenge $(date +'%Y-%m-%d')"
+          git commit -m "Add daily challenge $TARGET_DATE"
           git push
 
       - name: Configure GitHub Pages
