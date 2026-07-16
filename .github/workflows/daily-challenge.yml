@@ -8,7 +8,14 @@ on:
         required: false
         type: string
   schedule:
-    - cron: "*/5 * * * *"
+  - cron: "17,47 23 * * *"
+    timezone: "Europe/London"
+
+  - cron: "17,47 0 * * *"
+    timezone: "Europe/London"
+
+  - cron: "17,47 1 * * *"
+    timezone: "Europe/London"
 
 permissions:
   contents: write
