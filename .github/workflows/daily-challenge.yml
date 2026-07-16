@@ -7,9 +7,6 @@ on:
         description: "Optional challenge date in YYYY-MM-DD format"
         required: false
         type: string
-  schedule:
-    - cron: "*/5 * * * *"
-      timezone: "Europe/London"
 
 permissions:
   contents: write
