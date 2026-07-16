@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-17",
+    "id": "2026-07-17-quest-tracker",
+    "signature": "bcda0e0e37e80fe1",
+    "title": "Event-Driven Quest Objective Tracker",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Implement quests containing collection, elimination, interaction, and location objectives without tightly coupling quests to gameplay systems.",
+    "requirements": [
+      "Objectives must subscribe only to relevant gameplay events.",
+      "Completed objectives must ignore further progress.",
+      "Optional objectives must not block quest completion.",
+      "Quest progress must be serialisable without serialising event subscriptions.",
+      "The system must report progress changes without UI polling."
+    ],
+    "constraint": "Important state changes must be reported through events or callbacks.",
+    "stretchGoal": "Support runtime configuration changes without rebuilding the entire system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-17",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-17/",
+    "generatedAt": "2026-07-16T23:10:02.605Z"
+  },
+  {
     "date": "2026-07-16",
     "id": "2026-07-16-command-history",
     "signature": "e4200faf299069c2",
