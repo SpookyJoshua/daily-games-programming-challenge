@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-18",
+    "id": "2026-07-18-branching-dialogue",
+    "signature": "94debe69ee4bcbbf",
+    "title": "Conditional Branching Dialogue Runtime",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 60,
+    "description": "Implement dialogue nodes, conditional responses, state-changing consequences, and conversation termination without UI dependencies.",
+    "requirements": [
+      "A node must support multiple player responses.",
+      "Unavailable responses must include a reason for debugging.",
+      "Consequences must be applied only after a response is selected.",
+      "Dialogue data must remain separate from presentation.",
+      "Invalid node references must terminate gracefully with an error result."
+    ],
+    "constraint": "Avoid inheritance for the main design; prefer composition and small interfaces.",
+    "stretchGoal": "Create an example showing two separate systems consuming the same public API.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-18",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-18/",
+    "generatedAt": "2026-07-17T23:07:20.998Z"
+  },
+  {
     "date": "2026-07-17",
     "id": "2026-07-17-quest-tracker",
     "signature": "bcda0e0e37e80fe1",
