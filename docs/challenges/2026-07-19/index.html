@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Create an audio request manager that limits simultaneous sounds and replaces lower-priority sounds when appropriate."
+    >
+    <title>
+        Voice-Limited Audio Priority Manager |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-07-19</p>
+            <h1>Voice-Limited Audio Priority Manager</h1>
+
+            <div class="meta-row">
+                <span>Intermediate</span>
+                <span>50 minutes</span>
+            </div>
+
+            <p class="lead">
+                Create an audio request manager that limits simultaneous sounds and replaces lower-priority sounds when appropriate.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Every request must include priority and category.</li><li>Global and per-category voice limits must be configurable.</li><li>Completed sounds must be removed from active tracking.</li><li>Equal-priority replacement behaviour must be deterministic.</li><li>A rejected request must report why it could not play.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Do not allocate a new collection during every update tick.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Provide a second implementation behind the same interface.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-19"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
