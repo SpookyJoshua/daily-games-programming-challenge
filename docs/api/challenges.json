@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-20",
+    "id": "2026-07-20-replay-buffer",
+    "signature": "0455762209bc54dd",
+    "title": "Fixed-Step Gameplay Replay Buffer",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 75,
+    "description": "Record compact fixed-step player inputs and replay them deterministically for debugging or ghost playback.",
+    "requirements": [
+      "Recorded frames must include a fixed-step index.",
+      "The buffer must have a configurable maximum duration.",
+      "Playback must support pause, resume, seek, and restart.",
+      "Recording data must be serialisable.",
+      "The replay system must detect mismatched simulation versions."
+    ],
+    "constraint": "Keep the core logic independent from MonoBehaviour so it can be unit tested without a Unity scene.",
+    "stretchGoal": "Add editor-time validation for invalid configuration values.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-20",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-20/",
+    "generatedAt": "2026-07-19T23:10:57.837Z"
+  },
+  {
     "date": "2026-07-19",
     "id": "2026-07-19-audio-priority",
     "signature": "d3809b26240152ec",
