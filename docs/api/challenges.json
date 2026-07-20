@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-21",
+    "id": "2026-07-21-grid-pathfinding",
+    "signature": "b1b53e60bd4d43c1",
+    "title": "Weighted Grid Pathfinding",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 80,
+    "description": "Implement pathfinding across a grid containing blocked cells and different movement costs.",
+    "requirements": [
+      "The result must contain an ordered path from start to destination.",
+      "Blocked cells must never appear in the final path.",
+      "Movement cost and estimated remaining cost must be tracked separately.",
+      "The system must report when no path exists.",
+      "The algorithm must avoid repeatedly recalculating closed nodes without cause."
+    ],
+    "constraint": "All externally visible state must be read-only.",
+    "stretchGoal": "Add editor-time validation for invalid configuration values.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-21",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-21/",
+    "generatedAt": "2026-07-20T23:14:19.501Z"
+  },
+  {
     "date": "2026-07-20",
     "id": "2026-07-20-replay-buffer",
     "signature": "0455762209bc54dd",
