@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-22",
+    "id": "2026-07-22-quest-tracker",
+    "signature": "449e4404842f812d",
+    "title": "Event-Driven Quest Objective Tracker",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Implement quests containing collection, elimination, interaction, and location objectives without tightly coupling quests to gameplay systems.",
+    "requirements": [
+      "Objectives must subscribe only to relevant gameplay events.",
+      "Completed objectives must ignore further progress.",
+      "Optional objectives must not block quest completion.",
+      "Quest progress must be serialisable without serialising event subscriptions.",
+      "The system must report progress changes without UI polling."
+    ],
+    "constraint": "Do not use LINQ inside frequently executed gameplay code.",
+    "stretchGoal": "Create an example showing two separate systems consuming the same public API.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-22",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-22/",
+    "generatedAt": "2026-07-21T23:11:01.769Z"
+  },
+  {
     "date": "2026-07-21",
     "id": "2026-07-21-grid-pathfinding",
     "signature": "b1b53e60bd4d43c1",
