@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Create an enemy state machine with idle, patrol, investigate, chase, attack, and stunned states."
+    >
+    <title>
+        Interruptible Enemy State Machine |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-07-23</p>
+            <h1>Interruptible Enemy State Machine</h1>
+
+            <div class="meta-row">
+                <span>Intermediate</span>
+                <span>55 minutes</span>
+            </div>
+
+            <p class="lead">
+                Create an enemy state machine with idle, patrol, investigate, chase, attack, and stunned states.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Every state must expose enter, update, and exit behaviour.</li><li>Stunned must be able to interrupt any active state.</li><li>Attack must respect both range and cooldown checks.</li><li>The state machine must reject invalid transitions safely.</li><li>Adding a new state must not require editing every existing state.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Dependencies must be supplied through a constructor or explicit initialisation method.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Add cancellation or interruption behaviour.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-23"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

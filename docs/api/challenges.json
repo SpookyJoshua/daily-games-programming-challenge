@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-23",
+    "id": "2026-07-23-enemy-state-machine",
+    "signature": "a9d3c04ebeb1c9e8",
+    "title": "Interruptible Enemy State Machine",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Create an enemy state machine with idle, patrol, investigate, chase, attack, and stunned states.",
+    "requirements": [
+      "Every state must expose enter, update, and exit behaviour.",
+      "Stunned must be able to interrupt any active state.",
+      "Attack must respect both range and cooldown checks.",
+      "The state machine must reject invalid transitions safely.",
+      "Adding a new state must not require editing every existing state."
+    ],
+    "constraint": "Dependencies must be supplied through a constructor or explicit initialisation method.",
+    "stretchGoal": "Add cancellation or interruption behaviour.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-23",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-23/",
+    "generatedAt": "2026-07-22T23:15:12.216Z"
+  },
+  {
     "date": "2026-07-22",
     "id": "2026-07-22-quest-tracker",
     "signature": "449e4404842f812d",
