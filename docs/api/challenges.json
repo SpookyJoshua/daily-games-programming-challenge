@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-24",
+    "id": "2026-07-24-typed-event-bus",
+    "signature": "9c37b8bdb825f53b",
+    "title": "Type-Safe Gameplay Event Bus",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 60,
+    "description": "Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references.",
+    "requirements": [
+      "Events must use strongly typed payloads.",
+      "Subscribers must be able to register and unregister safely.",
+      "Duplicate subscription behaviour must be explicitly defined.",
+      "Publishing with no listeners must be safe.",
+      "One failing listener must not prevent remaining listeners from being called."
+    ],
+    "constraint": "The primary manager class must remain below 150 lines.",
+    "stretchGoal": "Write at least three unit tests covering normal behaviour, an edge case, and invalid input.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-24",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-24/",
+    "generatedAt": "2026-07-23T23:10:56.163Z"
+  },
+  {
     "date": "2026-07-23",
     "id": "2026-07-23-enemy-state-machine",
     "signature": "a9d3c04ebeb1c9e8",

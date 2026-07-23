@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references."
+    >
+    <title>
+        Type-Safe Gameplay Event Bus |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-07-24</p>
+            <h1>Type-Safe Gameplay Event Bus</h1>
+
+            <div class="meta-row">
+                <span>Advanced</span>
+                <span>60 minutes</span>
+            </div>
+
+            <p class="lead">
+                Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Events must use strongly typed payloads.</li><li>Subscribers must be able to register and unregister safely.</li><li>Duplicate subscription behaviour must be explicitly defined.</li><li>Publishing with no listeners must be safe.</li><li>One failing listener must not prevent remaining listeners from being called.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>The primary manager class must remain below 150 lines.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Write at least three unit tests covering normal behaviour, an edge case, and invalid input.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-24"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
