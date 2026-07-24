@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-25",
+    "id": "2026-07-25-spawn-director",
+    "signature": "5f75e1b180bfda25",
+    "title": "Dynamic Enemy Spawn Director",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 70,
+    "description": "Build a director that spends a threat budget on enemy compositions while respecting pacing, spawn validity, and active enemy limits.",
+    "requirements": [
+      "Enemy types must have configurable budget costs.",
+      "The director must never exceed its active-enemy limit.",
+      "Spawn points must be validated before use.",
+      "Threat budget growth and recovery must be configurable.",
+      "The director must explain why a spawn request was rejected."
+    ],
+    "constraint": "Do not allocate a new collection during every update tick.",
+    "stretchGoal": "Add save and load support without coupling serialisation to the core system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-25",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-25/",
+    "generatedAt": "2026-07-24T23:15:28.308Z"
+  },
+  {
     "date": "2026-07-24",
     "id": "2026-07-24-typed-event-bus",
     "signature": "9c37b8bdb825f53b",
