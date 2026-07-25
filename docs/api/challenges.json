@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-26",
+    "id": "2026-07-26-typed-event-bus",
+    "signature": "aa6bedaa38b51c2c",
+    "title": "Type-Safe Gameplay Event Bus",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 60,
+    "description": "Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references.",
+    "requirements": [
+      "Events must use strongly typed payloads.",
+      "Subscribers must be able to register and unregister safely.",
+      "Duplicate subscription behaviour must be explicitly defined.",
+      "Publishing with no listeners must be safe.",
+      "One failing listener must not prevent remaining listeners from being called."
+    ],
+    "constraint": "Do not expose mutable collections publicly.",
+    "stretchGoal": "Add editor-time validation for invalid configuration values.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-26",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-26/",
+    "generatedAt": "2026-07-25T23:11:45.796Z"
+  },
+  {
     "date": "2026-07-25",
     "id": "2026-07-25-spawn-director",
     "signature": "5f75e1b180bfda25",
