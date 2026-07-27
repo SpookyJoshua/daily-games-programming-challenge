@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-28",
+    "id": "2026-07-28-interaction-selection",
+    "signature": "fe42fa0618c91b57",
+    "title": "Contextual Interaction Selector",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Create a selector that chooses the best interactable using distance, viewing angle, priority, and line of sight.",
+    "requirements": [
+      "Invalid interactables must be ignored safely.",
+      "Selection scoring must be configurable.",
+      "The selected target must not flicker between near-equal candidates.",
+      "The system must report selection changes through an event.",
+      "Interaction execution must remain separate from target selection."
+    ],
+    "constraint": "Dependencies must be supplied through a constructor or explicit initialisation method.",
+    "stretchGoal": "Create a Unity adapter that wraps the plain C# implementation.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-28",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-28/",
+    "generatedAt": "2026-07-27T23:19:29.977Z"
+  },
+  {
     "date": "2026-07-27",
     "id": "2026-07-27-threat-system",
     "signature": "47bbef0b44ded1f2",
