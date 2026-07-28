@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-29",
+    "id": "2026-07-29-typed-event-bus",
+    "signature": "16c4cf88f4f2ec24",
+    "title": "Type-Safe Gameplay Event Bus",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 60,
+    "description": "Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references.",
+    "requirements": [
+      "Events must use strongly typed payloads.",
+      "Subscribers must be able to register and unregister safely.",
+      "Duplicate subscription behaviour must be explicitly defined.",
+      "Publishing with no listeners must be safe.",
+      "One failing listener must not prevent remaining listeners from being called."
+    ],
+    "constraint": "Use a dedicated result type rather than returning only true or false.",
+    "stretchGoal": "Create a Unity adapter that wraps the plain C# implementation.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-29",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-29/",
+    "generatedAt": "2026-07-28T23:14:47.651Z"
+  },
+  {
     "date": "2026-07-28",
     "id": "2026-07-28-interaction-selection",
     "signature": "fe42fa0618c91b57",
