@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-07-30",
+    "id": "2026-07-30-combo-score",
+    "signature": "f10adb26cab76dd4",
+    "title": "Decay-Based Combo Scoring",
+    "difficulty": "Junior",
+    "estimatedMinutes": 35,
+    "description": "Create a scoring system where successful actions build a multiplier that decays after inactivity and resets on failure.",
+    "requirements": [
+      "Multiplier growth thresholds must be configurable.",
+      "The multiplier must have a maximum value.",
+      "A failed action must reset the combo.",
+      "Awarded score must use the multiplier active at that moment.",
+      "The system must expose remaining combo time without requiring UI-specific code."
+    ],
+    "constraint": "Design the public API first and include a short usage example.",
+    "stretchGoal": "Write at least three unit tests covering normal behaviour, an edge case, and invalid input.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-07-30",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-07-30/",
+    "generatedAt": "2026-07-29T23:13:20.208Z"
+  },
+  {
     "date": "2026-07-29",
     "id": "2026-07-29-typed-event-bus",
     "signature": "16c4cf88f4f2ec24",
