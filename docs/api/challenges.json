@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-03",
+    "id": "2026-08-03-procedural-rooms",
+    "signature": "93758bfe8fe0bfa9",
+    "title": "Seeded Procedural Room Chain",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 70,
+    "description": "Generate a sequence of compatible rooms using doorway directions, room tags, repetition limits, and a supplied seed.",
+    "requirements": [
+      "Only rooms compatible with the previous exit may be selected.",
+      "Required and forbidden room tags must be respected.",
+      "Each room must have a configurable repetition limit.",
+      "The generator must report when no valid continuation exists.",
+      "The same seed and input catalogue must produce the same layout."
+    ],
+    "constraint": "Do not use LINQ inside frequently executed gameplay code.",
+    "stretchGoal": "Add editor-time validation for invalid configuration values.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-03",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-03/",
+    "generatedAt": "2026-08-02T23:10:28.632Z"
+  },
+  {
     "date": "2026-08-02",
     "id": "2026-08-02-spawn-director",
     "signature": "c0563bb497020c94",
