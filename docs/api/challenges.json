@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-04",
+    "id": "2026-08-04-replay-buffer",
+    "signature": "3615607498788250",
+    "title": "Fixed-Step Gameplay Replay Buffer",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 75,
+    "description": "Record compact fixed-step player inputs and replay them deterministically for debugging or ghost playback.",
+    "requirements": [
+      "Recorded frames must include a fixed-step index.",
+      "The buffer must have a configurable maximum duration.",
+      "Playback must support pause, resume, seek, and restart.",
+      "Recording data must be serialisable.",
+      "The replay system must detect mismatched simulation versions."
+    ],
+    "constraint": "The solution must remain safe when a tracked object is removed unexpectedly.",
+    "stretchGoal": "Add graceful recovery when one dependency reports a failure.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-04",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-04/",
+    "generatedAt": "2026-08-03T23:18:32.499Z"
+  },
+  {
     "date": "2026-08-03",
     "id": "2026-08-03-procedural-rooms",
     "signature": "93758bfe8fe0bfa9",
