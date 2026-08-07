@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-08",
+    "id": "2026-08-08-resource-regeneration",
+    "signature": "03e4754bb3026948",
+    "title": "Regenerating Resource with Delays",
+    "difficulty": "Junior",
+    "estimatedMinutes": 35,
+    "description": "Implement health, stamina, or mana regeneration with spend validation, delayed recovery, modifiers, and maximum-value changes.",
+    "requirements": [
+      "Spending more than the available value must fail without modification.",
+      "Regeneration must begin only after a configurable delay.",
+      "Changing the maximum must define whether the current ratio is preserved.",
+      "Regeneration modifiers must stack using a documented rule.",
+      "Value changes must be observable without polling."
+    ],
+    "constraint": "Important state changes must be reported through events or callbacks.",
+    "stretchGoal": "Add a debug event history with a configurable maximum capacity.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-08",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-08/",
+    "generatedAt": "2026-08-07T22:54:56.941Z"
+  },
+  {
     "date": "2026-08-07",
     "id": "2026-08-07-scene-transition",
     "signature": "6e25905b01aaa6c6",
