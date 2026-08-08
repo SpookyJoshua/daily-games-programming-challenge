@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-09",
+    "id": "2026-08-09-checkpoint-respawn",
+    "signature": "c0ae6fb7dfb6af37",
+    "title": "Checkpoint and Respawn Snapshot",
+    "difficulty": "Junior",
+    "estimatedMinutes": 40,
+    "description": "Build a checkpoint service that records the latest valid checkpoint and restores selected player state after death.",
+    "requirements": [
+      "Activating the same checkpoint repeatedly must be safe.",
+      "A default spawn must exist when no checkpoint has been activated.",
+      "Checkpoint data must not directly manipulate the player object.",
+      "Respawn must restore position and configurable state values.",
+      "Invalid checkpoint data must fall back safely."
+    ],
+    "constraint": "Invalid input must be handled without throwing from the public gameplay API.",
+    "stretchGoal": "Create a small performance test using at least 1,000 simulated entries.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-09",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-09/",
+    "generatedAt": "2026-08-08T22:46:03.479Z"
+  },
+  {
     "date": "2026-08-08",
     "id": "2026-08-08-resource-regeneration",
     "signature": "03e4754bb3026948",
