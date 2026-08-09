@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-10",
+    "id": "2026-08-10-audio-priority",
+    "signature": "5464186b9d7c3966",
+    "title": "Voice-Limited Audio Priority Manager",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Create an audio request manager that limits simultaneous sounds and replaces lower-priority sounds when appropriate.",
+    "requirements": [
+      "Every request must include priority and category.",
+      "Global and per-category voice limits must be configurable.",
+      "Completed sounds must be removed from active tracking.",
+      "Equal-priority replacement behaviour must be deterministic.",
+      "A rejected request must report why it could not play."
+    ],
+    "constraint": "The solution must remain safe when a tracked object is removed unexpectedly.",
+    "stretchGoal": "Support deterministic replay from a recorded seed or command sequence.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-10",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-10/",
+    "generatedAt": "2026-08-09T22:48:45.054Z"
+  },
+  {
     "date": "2026-08-09",
     "id": "2026-08-09-checkpoint-respawn",
     "signature": "c0ae6fb7dfb6af37",
