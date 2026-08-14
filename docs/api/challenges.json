@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-15",
+    "id": "2026-08-15-crafting",
+    "signature": "9ee271aca0cc5c97",
+    "title": "Atomic Recipe Crafting",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Implement crafting that validates all ingredients and capacity rules before modifying the inventory.",
+    "requirements": [
+      "Recipes must support several ingredient types and quantities.",
+      "A failed validation must not modify inventory state.",
+      "Ingredients must be removed only after every check succeeds.",
+      "The result must identify each missing requirement.",
+      "Recipe definitions must remain separate from runtime crafting logic."
+    ],
+    "constraint": "The main system must support more than one simultaneous independent instance.",
+    "stretchGoal": "Provide a second implementation behind the same interface.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-15",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-15/",
+    "generatedAt": "2026-08-14T22:39:44.796Z"
+  },
+  {
     "date": "2026-08-14",
     "id": "2026-08-14-turn-order",
     "signature": "96a5237878a1e109",
