@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-17",
+    "id": "2026-08-17-wave-spawner",
+    "signature": "b25d9c9420856ac2",
+    "title": "Data-Driven Encounter Wave Controller",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Build a wave controller that processes configurable enemy groups, spawn delays, completion rules, and optional intermissions.",
+    "requirements": [
+      "Wave configuration must be separate from runtime progress.",
+      "Each group must define an enemy type, quantity, and spawn interval.",
+      "The next wave must not begin until the active completion rule succeeds.",
+      "The controller must report wave-started, wave-completed, and encounter-completed events.",
+      "Cancellation must stop pending spawns safely."
+    ],
+    "constraint": "Design the public API first and include a short usage example.",
+    "stretchGoal": "Write at least three unit tests covering normal behaviour, an edge case, and invalid input.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-17",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-17/",
+    "generatedAt": "2026-08-16T22:35:25.059Z"
+  },
+  {
     "date": "2026-08-16",
     "id": "2026-08-16-scene-transition",
     "signature": "e58b065c7b10d24e",
