@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-20",
+    "id": "2026-08-20-procedural-rooms",
+    "signature": "9169da334946bd27",
+    "title": "Seeded Procedural Room Chain",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 70,
+    "description": "Generate a sequence of compatible rooms using doorway directions, room tags, repetition limits, and a supplied seed.",
+    "requirements": [
+      "Only rooms compatible with the previous exit may be selected.",
+      "Required and forbidden room tags must be respected.",
+      "Each room must have a configurable repetition limit.",
+      "The generator must report when no valid continuation exists.",
+      "The same seed and input catalogue must produce the same layout."
+    ],
+    "constraint": "Time must be supplied through an abstraction rather than read directly from UnityEngine.Time.",
+    "stretchGoal": "Add profiling counters for the operations most likely to become expensive.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-20",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-20/",
+    "generatedAt": "2026-08-19T22:40:15.801Z"
+  },
+  {
     "date": "2026-08-19",
     "id": "2026-08-19-weighted-loot",
     "signature": "c5089eaad6a3dc49",
