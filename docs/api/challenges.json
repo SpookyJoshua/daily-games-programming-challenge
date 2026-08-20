@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-21",
+    "id": "2026-08-21-stackable-inventory",
+    "signature": "054c43a916939fc3",
+    "title": "Stackable Equipment Inventory",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Build an inventory that stores stackable consumables and unique equipment while keeping configuration data separate from runtime item state.",
+    "requirements": [
+      "Item definitions must use stable unique identifiers.",
+      "Stackable items must fill partial stacks before creating new stacks.",
+      "Unique equipment must retain its own runtime durability value.",
+      "Removing an unavailable quantity must leave the inventory unchanged.",
+      "External callers must not be able to mutate the internal collection directly."
+    ],
+    "constraint": "Invalid input must be handled without throwing from the public gameplay API.",
+    "stretchGoal": "Document one architectural trade-off and one rejected alternative.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-21",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-21/",
+    "generatedAt": "2026-08-20T22:44:02.204Z"
+  },
+  {
     "date": "2026-08-20",
     "id": "2026-08-20-procedural-rooms",
     "signature": "9169da334946bd27",
