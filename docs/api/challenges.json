@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-23",
+    "id": "2026-08-23-resource-regeneration",
+    "signature": "e91b1edea94f056b",
+    "title": "Regenerating Resource with Delays",
+    "difficulty": "Junior",
+    "estimatedMinutes": 35,
+    "description": "Implement health, stamina, or mana regeneration with spend validation, delayed recovery, modifiers, and maximum-value changes.",
+    "requirements": [
+      "Spending more than the available value must fail without modification.",
+      "Regeneration must begin only after a configurable delay.",
+      "Changing the maximum must define whether the current ratio is preserved.",
+      "Regeneration modifiers must stack using a documented rule.",
+      "Value changes must be observable without polling."
+    ],
+    "constraint": "Design the public API first and include a short usage example.",
+    "stretchGoal": "Add a diagnostic snapshot that explains the system's current state.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-23",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-23/",
+    "generatedAt": "2026-08-22T22:37:05.095Z"
+  },
+  {
     "date": "2026-08-22",
     "id": "2026-08-22-wave-spawner",
     "signature": "a699af57830d1b14",
