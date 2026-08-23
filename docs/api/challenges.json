@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-24",
+    "id": "2026-08-24-turn-order",
+    "signature": "a3700c3c9a5827b6",
+    "title": "Initiative Timeline Turn Manager",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Create a deterministic turn timeline where speed affects action frequency and characters can delay or be inserted mid-combat.",
+    "requirements": [
+      "Faster characters must generally act more frequently.",
+      "Delaying a turn must preserve other characters' progress.",
+      "Defeated characters must be removed safely.",
+      "Adding a character must not reset the existing timeline.",
+      "Tie-breaking behaviour must be deterministic."
+    ],
+    "constraint": "Dependencies must be supplied through a constructor or explicit initialisation method.",
+    "stretchGoal": "Add a debug event history with a configurable maximum capacity.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-24",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-24/",
+    "generatedAt": "2026-08-23T22:36:55.195Z"
+  },
+  {
     "date": "2026-08-23",
     "id": "2026-08-23-resource-regeneration",
     "signature": "e91b1edea94f056b",
