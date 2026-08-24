@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Build an inventory that stores stackable consumables and unique equipment while keeping configuration data separate from runtime item state."
+    >
+    <title>
+        Stackable Equipment Inventory |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-08-25</p>
+            <h1>Stackable Equipment Inventory</h1>
+
+            <div class="meta-row">
+                <span>Intermediate</span>
+                <span>50 minutes</span>
+            </div>
+
+            <p class="lead">
+                Build an inventory that stores stackable consumables and unique equipment while keeping configuration data separate from runtime item state.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Item definitions must use stable unique identifiers.</li><li>Stackable items must fill partial stacks before creating new stacks.</li><li>Unique equipment must retain its own runtime durability value.</li><li>Removing an unavailable quantity must leave the inventory unchanged.</li><li>External callers must not be able to mutate the internal collection directly.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Do not use a singleton or any mutable global state.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Support runtime configuration changes without rebuilding the entire system.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-25"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

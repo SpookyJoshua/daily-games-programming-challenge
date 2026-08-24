@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-25",
+    "id": "2026-08-25-stackable-inventory",
+    "signature": "9807ab35d996545b",
+    "title": "Stackable Equipment Inventory",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Build an inventory that stores stackable consumables and unique equipment while keeping configuration data separate from runtime item state.",
+    "requirements": [
+      "Item definitions must use stable unique identifiers.",
+      "Stackable items must fill partial stacks before creating new stacks.",
+      "Unique equipment must retain its own runtime durability value.",
+      "Removing an unavailable quantity must leave the inventory unchanged.",
+      "External callers must not be able to mutate the internal collection directly."
+    ],
+    "constraint": "Do not use a singleton or any mutable global state.",
+    "stretchGoal": "Support runtime configuration changes without rebuilding the entire system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-25",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-25/",
+    "generatedAt": "2026-08-24T22:43:31.146Z"
+  },
+  {
     "date": "2026-08-24",
     "id": "2026-08-24-turn-order",
     "signature": "a3700c3c9a5827b6",
