@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-27",
+    "id": "2026-08-27-turn-order",
+    "signature": "75324d02ad17462e",
+    "title": "Initiative Timeline Turn Manager",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Create a deterministic turn timeline where speed affects action frequency and characters can delay or be inserted mid-combat.",
+    "requirements": [
+      "Faster characters must generally act more frequently.",
+      "Delaying a turn must preserve other characters' progress.",
+      "Defeated characters must be removed safely.",
+      "Adding a character must not reset the existing timeline.",
+      "Tie-breaking behaviour must be deterministic."
+    ],
+    "constraint": "The primary manager class must remain below 150 lines.",
+    "stretchGoal": "Add cancellation or interruption behaviour.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-27",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-27/",
+    "generatedAt": "2026-08-27T03:17:38.391Z"
+  },
+  {
     "date": "2026-08-26",
     "id": "2026-08-26-grid-pathfinding",
     "signature": "649b041d523f6a95",
