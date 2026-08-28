@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-08-28",
+    "id": "2026-08-28-status-effects",
+    "signature": "b380d94d77043c9c",
+    "title": "Composable Status Effect System",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 75,
+    "description": "Build a status effect system supporting timed effects, periodic ticks, stacking rules, stat modifiers, and safe removal.",
+    "requirements": [
+      "Effect definitions must not contain shared runtime state.",
+      "Each effect must define stack, refresh, replace, or reject behaviour.",
+      "Periodic effects must support configurable intervals.",
+      "Removing an effect must reverse temporary modifications.",
+      "Finite and infinite durations must both be supported."
+    ],
+    "constraint": "The primary manager class must remain below 150 lines.",
+    "stretchGoal": "Write at least three unit tests covering normal behaviour, an edge case, and invalid input.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-28",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-08-28/",
+    "generatedAt": "2026-08-28T06:06:30.344Z"
+  },
+  {
     "date": "2026-08-27",
     "id": "2026-08-27-turn-order",
     "signature": "75324d02ad17462e",
