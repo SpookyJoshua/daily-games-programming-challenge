@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Create an input buffer that stores combat commands until the character can execute them, while supporting expiry and priority."
+    >
+    <title>
+        Priority Combat Input Buffer |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-08-30</p>
+            <h1>Priority Combat Input Buffer</h1>
+
+            <div class="meta-row">
+                <span>Advanced</span>
+                <span>65 minutes</span>
+            </div>
+
+            <p class="lead">
+                Create an input buffer that stores combat commands until the character can execute them, while supporting expiry and priority.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Buffered commands must expire after a configurable duration.</li><li>Commands with equal priority must preserve input order.</li><li>Invalid commands must be discarded with a reason.</li><li>The buffer must have a configurable maximum size.</li><li>Executing or discarding a command must remove it exactly once.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Configuration data and runtime state must use separate types.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Create an example showing two separate systems consuming the same public API.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-08-30"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
