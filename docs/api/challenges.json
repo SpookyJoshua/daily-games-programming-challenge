@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-01",
+    "id": "2026-09-01-enemy-state-machine",
+    "signature": "471298e42372f7a4",
+    "title": "Interruptible Enemy State Machine",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Create an enemy state machine with idle, patrol, investigate, chase, attack, and stunned states.",
+    "requirements": [
+      "Every state must expose enter, update, and exit behaviour.",
+      "Stunned must be able to interrupt any active state.",
+      "Attack must respect both range and cooldown checks.",
+      "The state machine must reject invalid transitions safely.",
+      "Adding a new state must not require editing every existing state."
+    ],
+    "constraint": "The main system must support more than one simultaneous independent instance.",
+    "stretchGoal": "Add editor-time validation for invalid configuration values.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-01",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-01/",
+    "generatedAt": "2026-09-01T01:17:36.740Z"
+  },
+  {
     "date": "2026-08-31",
     "id": "2026-08-31-resource-regeneration",
     "signature": "80df0a3e0f8b3ca6",
