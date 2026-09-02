@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Build a save system that validates data, migrates older versions, and applies loaded state only after the entire operation succeeds."
+    >
+    <title>
+        Transactional Versioned Save System |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-09-02</p>
+            <h1>Transactional Versioned Save System</h1>
+
+            <div class="meta-row">
+                <span>Advanced</span>
+                <span>75 minutes</span>
+            </div>
+
+            <p class="lead">
+                Build a save system that validates data, migrates older versions, and applies loaded state only after the entire operation succeeds.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Every save must include a version number.</li><li>Older versions must be migrated sequentially.</li><li>A failed migration must leave runtime state unchanged.</li><li>Serialisation and game-state application must remain separate.</li><li>The result must distinguish missing, corrupt, incompatible, and successful saves.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Random number generation must be supplied through an abstraction.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Provide a second implementation behind the same interface.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-02"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
