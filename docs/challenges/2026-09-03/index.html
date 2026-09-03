@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Build a wave controller that processes configurable enemy groups, spawn delays, completion rules, and optional intermissions."
+    >
+    <title>
+        Data-Driven Encounter Wave Controller |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-09-03</p>
+            <h1>Data-Driven Encounter Wave Controller</h1>
+
+            <div class="meta-row">
+                <span>Intermediate</span>
+                <span>55 minutes</span>
+            </div>
+
+            <p class="lead">
+                Build a wave controller that processes configurable enemy groups, spawn delays, completion rules, and optional intermissions.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Wave configuration must be separate from runtime progress.</li><li>Each group must define an enemy type, quantity, and spawn interval.</li><li>The next wave must not begin until the active completion rule succeeds.</li><li>The controller must report wave-started, wave-completed, and encounter-completed events.</li><li>Cancellation must stop pending spawns safely.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Avoid checking every registered entry on every frame.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Document one architectural trade-off and one rejected alternative.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-03"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
