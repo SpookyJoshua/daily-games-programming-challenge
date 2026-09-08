@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-08",
+    "id": "2026-09-08-weighted-loot",
+    "signature": "7417729b267573c7",
+    "title": "Deterministic Weighted Loot Table",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 45,
+    "description": "Create a weighted loot table supporting rarity weights, quantity ranges, guaranteed drops, and deterministic seeded rolls.",
+    "requirements": [
+      "Zero-weight entries must never be selected randomly.",
+      "Invalid or empty tables must return a descriptive failure.",
+      "Guaranteed drops must be resolved separately from weighted drops.",
+      "The same seed and input data must produce the same result.",
+      "Random number generation must be supplied as a dependency."
+    ],
+    "constraint": "The primary manager class must remain below 150 lines.",
+    "stretchGoal": "Add save and load support without coupling serialisation to the core system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-08",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-08/",
+    "generatedAt": "2026-09-08T00:24:32.202Z"
+  },
+  {
     "date": "2026-09-07",
     "id": "2026-09-07-combo-score",
     "signature": "7a59cfdbd562001d",
