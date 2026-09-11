@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-11",
+    "id": "2026-09-11-grid-pathfinding",
+    "signature": "164b0f2ef263e33c",
+    "title": "Weighted Grid Pathfinding",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 80,
+    "description": "Implement pathfinding across a grid containing blocked cells and different movement costs.",
+    "requirements": [
+      "The result must contain an ordered path from start to destination.",
+      "Blocked cells must never appear in the final path.",
+      "Movement cost and estimated remaining cost must be tracked separately.",
+      "The system must report when no path exists.",
+      "The algorithm must avoid repeatedly recalculating closed nodes without cause."
+    ],
+    "constraint": "Keep the core logic independent from MonoBehaviour so it can be unit tested without a Unity scene.",
+    "stretchGoal": "Write at least three unit tests covering normal behaviour, an edge case, and invalid input.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-11",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-11/",
+    "generatedAt": "2026-09-11T00:09:22.468Z"
+  },
+  {
     "date": "2026-09-10",
     "id": "2026-09-10-replay-buffer",
     "signature": "64588f03dc865098",
