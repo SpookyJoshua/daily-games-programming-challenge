@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-12",
+    "id": "2026-09-12-ability-cooldowns",
+    "signature": "90caff171c7bd99a",
+    "title": "Charge-Based Ability Cooldowns",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 45,
+    "description": "Create an ability cooldown system that supports independent abilities, multiple charges, recharge queues, and cooldown modifiers.",
+    "requirements": [
+      "Abilities must use stable identifiers rather than display names.",
+      "Using a charge must begin recharging only the missing charge.",
+      "Cooldown progress must be available as a normalised value.",
+      "Changing a cooldown modifier must preserve valid progress.",
+      "The system must define what happens when an active cooldown is restarted."
+    ],
+    "constraint": "Time must be supplied through an abstraction rather than read directly from UnityEngine.Time.",
+    "stretchGoal": "Add a debug event history with a configurable maximum capacity.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-12",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-12/",
+    "generatedAt": "2026-09-12T00:17:25.026Z"
+  },
+  {
     "date": "2026-09-11",
     "id": "2026-09-11-grid-pathfinding",
     "signature": "164b0f2ef263e33c",
