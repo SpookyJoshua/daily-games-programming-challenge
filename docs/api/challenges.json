@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-14",
+    "id": "2026-09-14-combat-input-buffer",
+    "signature": "0def940f5d5e8fda",
+    "title": "Priority Combat Input Buffer",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 65,
+    "description": "Create an input buffer that stores combat commands until the character can execute them, while supporting expiry and priority.",
+    "requirements": [
+      "Buffered commands must expire after a configurable duration.",
+      "Commands with equal priority must preserve input order.",
+      "Invalid commands must be discarded with a reason.",
+      "The buffer must have a configurable maximum size.",
+      "Executing or discarding a command must remove it exactly once."
+    ],
+    "constraint": "Design the public API first and include a short usage example.",
+    "stretchGoal": "Add a debug event history with a configurable maximum capacity.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-14",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-14/",
+    "generatedAt": "2026-09-14T00:11:22.547Z"
+  },
+  {
     "date": "2026-09-13",
     "id": "2026-09-13-ability-cooldowns",
     "signature": "6d9aa02f9fde86dc",
