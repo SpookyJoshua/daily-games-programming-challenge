@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-15",
+    "id": "2026-09-15-replay-buffer",
+    "signature": "e28a42e8ec0c01ef",
+    "title": "Fixed-Step Gameplay Replay Buffer",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 75,
+    "description": "Record compact fixed-step player inputs and replay them deterministically for debugging or ghost playback.",
+    "requirements": [
+      "Recorded frames must include a fixed-step index.",
+      "The buffer must have a configurable maximum duration.",
+      "Playback must support pause, resume, seek, and restart.",
+      "Recording data must be serialisable.",
+      "The replay system must detect mismatched simulation versions."
+    ],
+    "constraint": "The primary manager class must remain below 150 lines.",
+    "stretchGoal": "Add a debug event history with a configurable maximum capacity.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-15",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-15/",
+    "generatedAt": "2026-09-15T00:37:30.278Z"
+  },
+  {
     "date": "2026-09-14",
     "id": "2026-09-14-combat-input-buffer",
     "signature": "0def940f5d5e8fda",
