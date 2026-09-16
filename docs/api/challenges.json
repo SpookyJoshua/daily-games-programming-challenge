@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-16",
+    "id": "2026-09-16-spawn-director",
+    "signature": "477e61146a5f8050",
+    "title": "Dynamic Enemy Spawn Director",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 70,
+    "description": "Build a director that spends a threat budget on enemy compositions while respecting pacing, spawn validity, and active enemy limits.",
+    "requirements": [
+      "Enemy types must have configurable budget costs.",
+      "The director must never exceed its active-enemy limit.",
+      "Spawn points must be validated before use.",
+      "Threat budget growth and recovery must be configurable.",
+      "The director must explain why a spawn request was rejected."
+    ],
+    "constraint": "Configuration data and runtime state must use separate types.",
+    "stretchGoal": "Create a Unity adapter that wraps the plain C# implementation.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-16",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-16/",
+    "generatedAt": "2026-09-16T00:18:38.721Z"
+  },
+  {
     "date": "2026-09-15",
     "id": "2026-09-15-replay-buffer",
     "signature": "e28a42e8ec0c01ef",
