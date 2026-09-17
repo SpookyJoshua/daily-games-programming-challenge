@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-17",
+    "id": "2026-09-17-interaction-selection",
+    "signature": "70d2da330b4d8301",
+    "title": "Contextual Interaction Selector",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Create a selector that chooses the best interactable using distance, viewing angle, priority, and line of sight.",
+    "requirements": [
+      "Invalid interactables must be ignored safely.",
+      "Selection scoring must be configurable.",
+      "The selected target must not flicker between near-equal candidates.",
+      "The system must report selection changes through an event.",
+      "Interaction execution must remain separate from target selection."
+    ],
+    "constraint": "Invalid input must be handled without throwing from the public gameplay API.",
+    "stretchGoal": "Add profiling counters for the operations most likely to become expensive.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-17",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-17/",
+    "generatedAt": "2026-09-17T00:31:26.197Z"
+  },
+  {
     "date": "2026-09-16",
     "id": "2026-09-16-spawn-director",
     "signature": "477e61146a5f8050",
