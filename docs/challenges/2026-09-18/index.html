@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Implement a reusable pool for projectiles, particles, or enemies with configurable growth and capacity rules."
+    >
+    <title>
+        Capacity-Limited Object Pool |
+        Daily Games Programming Challenge
+    </title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <main class="site-shell">
+        <a class="back-link" href="../../">
+            ← View all challenges
+        </a>
+
+        <article class="challenge-detail-card">
+            <p class="eyebrow">2026-09-18</p>
+            <h1>Capacity-Limited Object Pool</h1>
+
+            <div class="meta-row">
+                <span>Intermediate</span>
+                <span>45 minutes</span>
+            </div>
+
+            <p class="lead">
+                Implement a reusable pool for projectiles, particles, or enemies with configurable growth and capacity rules.
+            </p>
+
+            <section>
+                <h2>Requirements</h2>
+                <ul><li>Inactive objects must be reused before new objects are created.</li><li>The pool must optionally enforce a hard maximum capacity.</li><li>Returning an object twice must not corrupt the pool.</li><li>Creation, activation, and deactivation logic must be separate.</li><li>The pool must expose read-only diagnostics for active and inactive counts.</li></ul>
+            </section>
+
+            <section>
+                <h2>Additional constraint</h2>
+                <p>Use a dedicated result type rather than returning only true or false.</p>
+            </section>
+
+            <section>
+                <h2>Stretch goal</h2>
+                <p>Add cancellation or interruption behaviour.</p>
+            </section>
+
+            <div class="button-row">
+                <a
+                    class="primary-button"
+                    href="https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-18"
+                >
+                    Open challenge on GitHub
+                </a>
+
+                <a
+                    class="secondary-button"
+                    href="../../"
+                >
+                    Browse previous challenges
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

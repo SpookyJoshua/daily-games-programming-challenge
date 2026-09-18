@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-18",
+    "id": "2026-09-18-object-pool",
+    "signature": "d899f15b9d65a967",
+    "title": "Capacity-Limited Object Pool",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 45,
+    "description": "Implement a reusable pool for projectiles, particles, or enemies with configurable growth and capacity rules.",
+    "requirements": [
+      "Inactive objects must be reused before new objects are created.",
+      "The pool must optionally enforce a hard maximum capacity.",
+      "Returning an object twice must not corrupt the pool.",
+      "Creation, activation, and deactivation logic must be separate.",
+      "The pool must expose read-only diagnostics for active and inactive counts."
+    ],
+    "constraint": "Use a dedicated result type rather than returning only true or false.",
+    "stretchGoal": "Add cancellation or interruption behaviour.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-18",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-18/",
+    "generatedAt": "2026-09-18T00:17:22.175Z"
+  },
+  {
     "date": "2026-09-17",
     "id": "2026-09-17-interaction-selection",
     "signature": "70d2da330b4d8301",
