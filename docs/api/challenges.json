@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-21",
+    "id": "2026-09-21-damage-pipeline",
+    "signature": "aa7c7511c38e4606",
+    "title": "Damage Resolution Pipeline",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 65,
+    "description": "Design a damage pipeline that supports armour, resistances, critical hits, shields, invulnerability, and final health application.",
+    "requirements": [
+      "Incoming damage must be represented by an immutable request object.",
+      "Each processing stage must be independently testable.",
+      "Damage values must never become negative.",
+      "Rejected damage must include a reason.",
+      "The final result must report health damage, shield damage, and whether the hit was critical."
+    ],
+    "constraint": "Time must be supplied through an abstraction rather than read directly from UnityEngine.Time.",
+    "stretchGoal": "Create an example showing two separate systems consuming the same public API.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-21",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-21/",
+    "generatedAt": "2026-09-21T00:15:44.029Z"
+  },
+  {
     "date": "2026-09-20",
     "id": "2026-09-20-combat-input-buffer",
     "signature": "1670f9b2091bc537",
