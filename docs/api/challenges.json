@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-22",
+    "id": "2026-09-22-object-pool",
+    "signature": "2da597bbef603890",
+    "title": "Capacity-Limited Object Pool",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 45,
+    "description": "Implement a reusable pool for projectiles, particles, or enemies with configurable growth and capacity rules.",
+    "requirements": [
+      "Inactive objects must be reused before new objects are created.",
+      "The pool must optionally enforce a hard maximum capacity.",
+      "Returning an object twice must not corrupt the pool.",
+      "Creation, activation, and deactivation logic must be separate.",
+      "The pool must expose read-only diagnostics for active and inactive counts."
+    ],
+    "constraint": "Dependencies must be supplied through a constructor or explicit initialisation method.",
+    "stretchGoal": "Add graceful recovery when one dependency reports a failure.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-22",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-22/",
+    "generatedAt": "2026-09-22T00:49:28.869Z"
+  },
+  {
     "date": "2026-09-21",
     "id": "2026-09-21-damage-pipeline",
     "signature": "aa7c7511c38e4606",
