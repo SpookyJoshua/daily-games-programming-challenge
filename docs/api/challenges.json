@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-23",
+    "id": "2026-09-23-threat-system",
+    "signature": "9841cac79a459f40",
+    "title": "Decaying AI Threat Selection",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 65,
+    "description": "Implement an AI threat system using damage, distance, healing, visibility, and time-based decay to choose a target.",
+    "requirements": [
+      "Threat sources must use configurable weightings.",
+      "Destroyed or invalid targets must be removed safely.",
+      "Threat must decay over time.",
+      "Target changes must use hysteresis to avoid rapid switching.",
+      "The system must explain why the current target was selected."
+    ],
+    "constraint": "Do not identify gameplay objects, states, or actions using display-name strings.",
+    "stretchGoal": "Add cancellation or interruption behaviour.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-23",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-23/",
+    "generatedAt": "2026-09-23T00:31:55.606Z"
+  },
+  {
     "date": "2026-09-22",
     "id": "2026-09-22-object-pool",
     "signature": "2da597bbef603890",
