@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-24",
+    "id": "2026-09-24-versioned-save",
+    "signature": "4a9399602a42e6a1",
+    "title": "Transactional Versioned Save System",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 75,
+    "description": "Build a save system that validates data, migrates older versions, and applies loaded state only after the entire operation succeeds.",
+    "requirements": [
+      "Every save must include a version number.",
+      "Older versions must be migrated sequentially.",
+      "A failed migration must leave runtime state unchanged.",
+      "Serialisation and game-state application must remain separate.",
+      "The result must distinguish missing, corrupt, incompatible, and successful saves."
+    ],
+    "constraint": "Avoid inheritance for the main design; prefer composition and small interfaces.",
+    "stretchGoal": "Create an example showing two separate systems consuming the same public API.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-24",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-24/",
+    "generatedAt": "2026-09-24T00:29:22.290Z"
+  },
+  {
     "date": "2026-09-23",
     "id": "2026-09-23-threat-system",
     "signature": "9841cac79a459f40",
