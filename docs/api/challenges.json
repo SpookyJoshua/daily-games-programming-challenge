@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-25",
+    "id": "2026-09-25-scene-transition",
+    "signature": "e5db419c4b6cfb93",
+    "title": "Queued Asynchronous Scene Transition",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Create a scene transition coordinator with loading progress, fade stages, cancellation rules, and duplicate-request handling.",
+    "requirements": [
+      "Only one transition may actively load at a time.",
+      "Duplicate requests must have defined behaviour.",
+      "Loading progress must be exposed independently from UI.",
+      "A failed load must restore a valid state.",
+      "Scene activation must occur only after required transition stages complete."
+    ],
+    "constraint": "Use a dedicated result type rather than returning only true or false.",
+    "stretchGoal": "Document one architectural trade-off and one rejected alternative.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-25",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-25/",
+    "generatedAt": "2026-09-25T00:32:42.059Z"
+  },
+  {
     "date": "2026-09-24",
     "id": "2026-09-24-versioned-save",
     "signature": "4a9399602a42e6a1",
