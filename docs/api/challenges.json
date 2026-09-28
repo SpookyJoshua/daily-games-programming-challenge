@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-28",
+    "id": "2026-09-28-branching-dialogue",
+    "signature": "2f722a28eb87b350",
+    "title": "Conditional Branching Dialogue Runtime",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 60,
+    "description": "Implement dialogue nodes, conditional responses, state-changing consequences, and conversation termination without UI dependencies.",
+    "requirements": [
+      "A node must support multiple player responses.",
+      "Unavailable responses must include a reason for debugging.",
+      "Consequences must be applied only after a response is selected.",
+      "Dialogue data must remain separate from presentation.",
+      "Invalid node references must terminate gracefully with an error result."
+    ],
+    "constraint": "Random number generation must be supplied through an abstraction.",
+    "stretchGoal": "Add save and load support without coupling serialisation to the core system.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-09-28",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-09-28/",
+    "generatedAt": "2026-09-28T00:45:02.489Z"
+  },
+  {
     "date": "2026-09-27",
     "id": "2026-09-27-combat-input-buffer",
     "signature": "2fb38d19cd4fb732",
