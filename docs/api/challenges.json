@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-10-01",
+    "id": "2026-10-01-audio-priority",
+    "signature": "20fed398b46e4879",
+    "title": "Voice-Limited Audio Priority Manager",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 50,
+    "description": "Create an audio request manager that limits simultaneous sounds and replaces lower-priority sounds when appropriate.",
+    "requirements": [
+      "Every request must include priority and category.",
+      "Global and per-category voice limits must be configurable.",
+      "Completed sounds must be removed from active tracking.",
+      "Equal-priority replacement behaviour must be deterministic.",
+      "A rejected request must report why it could not play."
+    ],
+    "constraint": "The main system must support more than one simultaneous independent instance.",
+    "stretchGoal": "Add cancellation or interruption behaviour.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-10-01",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-10-01/",
+    "generatedAt": "2026-10-01T01:17:08.524Z"
+  },
+  {
     "date": "2026-09-30",
     "id": "2026-09-30-weighted-loot",
     "signature": "886a5b946e3a775c",
