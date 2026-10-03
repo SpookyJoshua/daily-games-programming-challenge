@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-10-03",
+    "id": "2026-10-03-typed-event-bus",
+    "signature": "1f4dafa314ad98a2",
+    "title": "Type-Safe Gameplay Event Bus",
+    "difficulty": "Advanced",
+    "estimatedMinutes": 60,
+    "description": "Implement a typed event bus that allows unrelated gameplay systems to communicate without direct references.",
+    "requirements": [
+      "Events must use strongly typed payloads.",
+      "Subscribers must be able to register and unregister safely.",
+      "Duplicate subscription behaviour must be explicitly defined.",
+      "Publishing with no listeners must be safe.",
+      "One failing listener must not prevent remaining listeners from being called."
+    ],
+    "constraint": "Invalid input must be handled without throwing from the public gameplay API.",
+    "stretchGoal": "Add editor-time validation for invalid configuration values.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-10-03",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-10-03/",
+    "generatedAt": "2026-10-03T01:11:21.523Z"
+  },
+  {
     "date": "2026-10-02",
     "id": "2026-10-02-resource-regeneration",
     "signature": "711d8e6ec02fe651",
