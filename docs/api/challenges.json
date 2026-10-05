@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-10-05",
+    "id": "2026-10-05-stat-modifiers",
+    "signature": "ecf8cf5af929c77a",
+    "title": "Ordered Stat Modifier Pipeline",
+    "difficulty": "Intermediate",
+    "estimatedMinutes": 55,
+    "description": "Create stats with base values, flat additions, additive percentages, multiplicative modifiers, temporary effects, and clamps.",
+    "requirements": [
+      "Base values must remain unchanged by modifiers.",
+      "Modifiers must be removable using stable identifiers.",
+      "Calculation order must be explicit and testable.",
+      "Temporary modifiers must expire automatically.",
+      "External callers must receive a read-only view of active modifiers."
+    ],
+    "constraint": "Avoid inheritance for the main design; prefer composition and small interfaces.",
+    "stretchGoal": "Create an example showing two separate systems consuming the same public API.",
+    "repositoryUrl": "https://github.com/SpookyJoshua/daily-games-programming-challenge/tree/main/challenges/2026-10-05",
+    "pageUrl": "https://spookyjoshua.github.io/daily-games-programming-challenge/challenges/2026-10-05/",
+    "generatedAt": "2026-10-05T00:54:41.260Z"
+  },
+  {
     "date": "2026-10-04",
     "id": "2026-10-04-wave-spawner",
     "signature": "d035466fbb08d302",
